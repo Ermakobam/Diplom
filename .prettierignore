@@ -1,0 +1,30 @@
+# Dependencies & package managers
+node_modules/
+frontend/node_modules/
+frontend/.next/
+.nuget-packages/
+.nuget-packages-local/
+
+# Build artifacts & caches
+bin/
+obj/
+**/bin/**
+**/obj/**
+.vs/
+.idea/
+.vscode/
+.cursor/
+
+# Vendor / third-party libraries in wwwroot
+IPriziv.Server/wwwroot/libs/**
+
+# Binary and template files
+*.zip
+*.docx
+*.xlsx
+*.log
+*.log.err
+*.DotSettings.user
+
+# Generated / inspect
+_inspect_s7/
