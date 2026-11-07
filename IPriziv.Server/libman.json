@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.6.0",
+      "destination": "wwwroot/libs/jquery/",
+      "files": [ "jquery.min.js", "jquery.min.map" ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "@types/jquery@3.3.1",
+      "destination": "wwwroot/libs/jquery/",
+      "files": [ "index.d.ts" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "jqueryui@1.11.1",
+      "destination": "wwwroot/libs/jqueryui/",
+      "files": [ "jquery-ui.min.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "jszip@3.10.1",
+      "destination": "wwwroot/libs/jszip/",
+      "files": [ "dist/jszip.min.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@5.2.0",
+      "destination": "wwwroot/libs/bootstrap/",
+      "files": [ "dist/css/bootstrap.min.css", "dist/js/bootstrap.min.js", "dist/js/bootstrap.min.js.map", "dist/css/bootstrap.min.css.map" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "cldrjs@0.5.5",
+      "destination": "wwwroot/libs/cldrjs/",
+      "files": [ "dist/cldr.js", "dist/cldr/event.js", "dist/cldr/supplemental.js", "dist/cldr/unresolved.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "globalize@1.4.2",
+      "destination": "wwwroot/libs/globalize/",
+      "files": [ "dist/globalize.js" ]
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "wwwroot/libs/toastr.js/",
+      "files": [ "toastr.min.css", "toastr.min.js", "toastr.js.map" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "devextreme-aspnet-data@2.8.6",
+      "destination": "wwwroot/libs/devextreme-aspnet-data/",
+      "files": [ "js/dx.aspnet.data.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "string-format@0.5.0",
+      "destination": "wwwroot/libs/string-format/",
+      "files": [ "lib/string-format.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "devextreme@22.1.4",
+      "destination": "wwwroot/libs/devextreme/",
+      "files": [ "dist/ts/dx.all.d.ts", "dist/js/dx.aspnet.mvc.js", "dist/js/dx.all.js", "dist/js/localization/dx.messages.ru.js", "dist/js/localization/dx.messages.en.js", "dist/css/dx.common.css", "dist/css/dx.light.css", "dist/css/icons/dxicons.woff2", "dist/css/dx.light.compact.css", "dist/css/dx.dark.compact.css" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "@devexpress/analytics-core@20.2.5",
+      "destination": "wwwroot/libs/devexpress-analytics-core/",
+      "files": [ "dist/js/dx-querybuilder.min.js", "dist/js/dx-analytics-core.min.js", "dist/css/dx-analytics.common.css", "dist/css/dx-analytics.light.css" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "devextreme-intl@19.1.8",
+      "destination": "wwwroot/libs/devextreme-intl/",
+      "files": [ "dist/devextreme-intl.min.js" ]
+    },
+    {
+      "library": "jquery-cookie@1.4.1",
+      "destination": "wwwroot/libs/jquery-cookie",
+      "files": [ "jquery.cookie.min.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "devextreme-quill@1.5.16",
+      "destination": "wwwroot/libs/quill",
+      "files": [ "dist/dx-quill.min.js", "dist/dx-quill.core.css", "dist/dx-quill.core.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "turndown@5.0.3",
+      "destination": "wwwroot/libs/turndown",
+      "files": [ "dist/turndown.js" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "showdown@1.9.1",
+      "destination": "wwwroot/libs/showdown",
+      "files": [ "dist/showdown.min.js", "dist/showdown.min.js.map" ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "@microsoft/signalr@6.0.3",
+      "destination": "wwwroot/libs/signalr",
+      "files": [ "dist/browser/signalr.min.js", "dist/browser/signalr.min.js.map" ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "split.js@1.6.5",
+      "destination": "wwwroot/libs/split/",
+      "files": [ "dist/split.min.js", "dist/split.min.js.map" ]
+    }
+  ]
+}

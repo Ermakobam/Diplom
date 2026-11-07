@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+		<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+		<UserSecretsId>e1bc321a-14e4-427b-bb11-af5aefc68005</UserSecretsId>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<EnableDefaultContentItems>False</EnableDefaultContentItems>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<TargetFramework>net9.0</TargetFramework>
+		<LangVersion>11</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="IPriziv.Server.Tests" />
+	</ItemGroup>
+	<ItemGroup>
+		<TypeScriptCompile Remove="wwwroot\scripts\pager.d.ts" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Templates\Шаблон наряда военкоматов.xlsx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\Шаблон контролей.xlsx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="wwwroot\**" >
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.0" />
+    <PackageReference Include="ClosedXML.Report" Version="0.2.4" />
+    <PackageReference Include="PdfPig" Version="0.1.16" />
+    <PackageReference Include="DbfDataReader" Version="0.9.0" />
+    <PackageReference Include="DevExtreme.AspNet.Data" Version="2.8.6" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="9.0.1" />
+    <PackageReference Include="FastMember.NetCore" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="9.0.9" />
+    <PackageReference Include="Ruzzie.FuzzyStrings" Version="7.0.1.59" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="SharpDocx" Version="1.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.5" />
+	  <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.8.3">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="9.0.5" />
+	  <PackageReference Include="TemplateEngine.Docx" Version="1.1.5" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="wwwroot\content\Руководство.docx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties appsettings_1json__JsonSchema="" />
+		</VisualStudio>
+	</ProjectExtensions>
+
+</Project>
