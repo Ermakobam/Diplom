@@ -1,0 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace IPriziv.Server.DTOs.Income
+{
+    public class IncomeMilitaryType
+    {
+        [Required(AllowEmptyStrings = false)]
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public bool IsMD { get; set; }
+    }
+}
